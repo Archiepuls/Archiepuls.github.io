@@ -71,6 +71,12 @@
 		<!-- motto -->
 		<div class="h-body">	
 			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
 		</div>
 		
 		<!-- others: such as time... -->			
@@ -226,7 +232,7 @@
 -->
 
 	
-	总计 2 文章
+	总计 3 文章
 	
 
 		</i>
@@ -239,6 +245,18 @@
         
         
         <ul>
+            
+                <li>
+                    <a href="/2021/07/27/%E5%92%8Cunsigned/">
+            			<em year="2021">
+                            07-27
+                        </em>
+        			    <span itemprop="name">
+                            和unsigned
+                        </span>
+        			    
+                    </a>
+                </li>
             
                 <li>
                     <a href="/2021/06/05/test-my-site/">
@@ -392,6 +410,28 @@
 	</div>		
 </footer>
 		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
 
 <!-- love effect -->
 

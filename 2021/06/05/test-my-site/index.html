@@ -71,6 +71,12 @@
 		<!-- motto -->
 		<div class="h-body">	
 			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
 		</div>
 		
 		<!-- others: such as time... -->			
@@ -282,6 +288,10 @@
 	<span>
 		<a id="totop-post-page">返回顶部</a>
 		
+			<a href="/2021/07/27/%E5%92%8Cunsigned/" title="和unsigned" rel="prev">
+				&laquo;上一篇
+			</a>
+		
 		
 			<a href="/2021/06/05/hello-world/" title="Hello World" rel="next">
 				下一篇&raquo;
@@ -301,6 +311,28 @@
 <div class="relate-post">
 	
 		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/2021/07/27/%E5%92%8Cunsigned/" title="和unsigned">
+								和unsigned			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								七月 27日, 2021				
+							</p>
+							<p class="relate-post-content">
+								
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/2021/07/27/%E5%92%8Cunsigned/" title="和unsigned">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="和unsigned"/>
+							</a>
+						</div>
+					</li>												
 			
 					<li>
 						<div class="relate-post-text">
@@ -562,6 +594,28 @@
 	</div>		
 </footer>
 		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
 
 <!-- love effect -->
 
