@@ -283,7 +283,7 @@
 		</div>
 
 		<div class="article-content" id="article-content">
-			<h1 id="关于signed-和unsigned"><a href="#关于signed-和unsigned" class="headerlink" title="关于signed 和unsigned"></a>关于signed 和unsigned</h1><p>整型的每一种都分为：无符号（unsigned）和有符号（signed）两种类型（float和double总是带符号的），在除char以外的数据类型中，默认情况下声明的整型变量都是有符号的类型；char在默认情况下总是无符号的。在除char以外的数据类型中，如果需声明无符号类型的话就需要在类型前加上unsigned。无符号版本和有符号版本的区别就是无符号类型能保存2倍于有符号类型的正整数数据，比如16位系统中一个short能存储的数据的范围为-32768<del>32767，而unsigned能存储的数据范围则是0</del>65535。由于在计算机中,整数是以补码形式存放的。根据最高位的不同，如果是1,有符号数的话就是负数；如果是无符号数,则都解释为正数。另外，unsigned若省略后一个关键字，大多数<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%BC%96%E8%AF%91%E5%99%A8">编译器</a>都会认为是unsigned int。</p>
+			<h1 id="关于signed-和unsigned"><a href="#关于signed-和unsigned" class="headerlink" title="关于signed 和unsigned"></a>关于signed 和unsigned</h1><p>整型的每一种都分为：无符号（unsigned）和有符号（signed）两种类型（float和double总是带符号的），在除char以外的数据类型中，默认情况下声明的整型变量都是有符号的类型；char在默认情况下总是无符号的。在除char以外的数据类型中，如果需声明无符号类型的话就需要在类型前加上unsigned。无符号版本和有符号版本的区别就是无符号类型能保存2倍于有符号类型的正整数数据，比如16位系统中一个short能存储的数据的范围为-32768-32767，而unsigned能存储的数据范围则是0-65535。由于在计算机中,整数是以补码形式存放的。根据最高位的不同，如果是1,有符号数的话就是负数；如果是无符号数,则都解释为正数。另外，unsigned若省略后一个关键字，大多数编译器都会认为是unsigned int。</p>
 <h2 id="如果不特别说明，一般认为定义的都是有符号的"><a href="#如果不特别说明，一般认为定义的都是有符号的" class="headerlink" title="如果不特别说明，一般认为定义的都是有符号的"></a>如果不特别说明，一般认为定义的都是有符号的</h2>	
 		</div>
 		
