@@ -3730,3 +3730,6 @@ blockquote footer cite:before {
     display: none;
   }
 }
+.post-toc .nav .nav-child {
+  display: block;
+}
