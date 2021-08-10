@@ -43,7 +43,7 @@
     }
 	
     const CONFIG_LEACLOUD_COUNT = {
-      enable: false,
+      enable: true,
 	  appId: 'AU8...',
 	  appKey: '4cU...',
 	  serverURLs: 'http' || ' '
@@ -105,6 +105,10 @@
 	</p>
 
 	
+	
+		<span id="star-button" rel="unlike">
+			<i class="icon-heart"></i>
+		</span>
 	
 
 	<!-- Nav trigger for navigation-H-->
@@ -285,7 +289,25 @@
 			
 			
 
+	
+    <span class="leancloud_visitors" id="/2021/08/06/Trie%E6%A0%91/_visitors" data-url="/2021/08/06/Trie%E6%A0%91/" data-title="Trie树">
+       	<i class="icon-eye"></i>
+       	热度
+        
+            <i class="leancloud_visitors_count" id="leancloud_visitors_count">1</i>
+                   
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2021/08/06/Trie%E6%A0%91/_likes" data-url="/2021/08/06/Trie%E6%A0%91/" data-title="Trie树" rel="unlike">
+        <i class="icon-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
+	
 
 		</div>
 
@@ -858,6 +880,11 @@
 -->
 
 
+  
+<script src="/plugin/leancloud/av-min.js"></script>
+<script src="/js/leancloud-count.js"></script>
+
+
 	
 
   
@@ -885,6 +912,21 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title= "热门文章"></div> 
+	</div>
+	
+    <script>
+        var limitCount = 10;
+        if( $('#topN').length ){
+            setTimeout(function() {
+                topNPost(limitCount);
+			}, 3000);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
